@@ -1,6 +1,9 @@
 import os
 from datetime import timedelta
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -9,6 +12,8 @@ SECRET_KEY = 'django-insecure-p3)-nt&59akdtqt%7zsohz@cr&=r@rg)js0b6pu8gn&(4^ja1b
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+
+AUTH_USER_MODEL = 'accounts.User'
 
 INSTALLED_APPS = [
     'jazzmin',  # noqa
@@ -147,17 +152,17 @@ JAZZMIN_SETTINGS = {
     "site_brand": "Karaoke",
     "site_icon": "images/favicon.png",
     "site_logo": None,
-    "welcome_sign": "Welcome to the AudioBook",
+    "welcome_sign": "Welcome to the Milliy karaoke",
     "copyright": "Ahmatov",
     "user_avatar": None,
 
     "topmenu_links": [
-        {"name": "AudioBook", "url": "http://127.0.0.1:8000/admin/", "permissions": ["accounts.view_user"]}],
-    "copyright": "AudioBook",
+        {"name": "Milliy karaoke", "url": "http://127.0.0.1:8000/admin/", "permissions": ["accounts.view_user"]}],
+    "copyright": "Milliy karaoke",
     "user_avatar": None,
     "topmenu_links":
         [
-            {"name": "AudioBook", "url": "home", "permissions": ["auth.view_user"]},
+            {"name": "Milliy karaoke", "url": "home", "permissions": ["auth.view_user"]},
             {"model": "accounts.User"},
         ],
     "show_sidebar": True,
@@ -214,7 +219,6 @@ JAZZMIN_UI_TWEAKS = {
     },
 }
 
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -226,11 +230,14 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/1'
+CELERY_BROKER_URL = 'redis://localhost:6379/1'
+CELERY_TIMEZONE = TIME_ZONE
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
