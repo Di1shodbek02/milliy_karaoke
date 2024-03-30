@@ -1,17 +1,16 @@
 import random
 
+from django.contrib.auth.tokens import default_token_generator
 from django.core.cache import cache
 from django.utils.encoding import force_str
-from django.utils.http import urlsafe_base64_encode
-from django.contrib.auth.tokens import default_token_generator
-
+from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from dotenv import load_dotenv
 from jwt.utils import force_bytes
 from passlib.context import CryptContext
 from rest_framework import status
+from rest_framework.generics import CreateAPIView, ListAPIView, GenericAPIView
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
-from rest_framework.generics import CreateAPIView, ListAPIView, GenericAPIView
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
 
@@ -79,7 +78,7 @@ class ConfirmationCodeAPIView(GenericAPIView):
             return Response({'message': 'The entered code is not valid! '}, status=status.HTTP_400_BAD_REQUEST)
 
 
-class ForgetPasswordAPIView(GenericAPIView):
+class PasswordResetRequestView(GenericAPIView):
     serializer_class = PasswordResetRequestSerializer
 
     def post(self, request):
@@ -90,11 +89,12 @@ class ForgetPasswordAPIView(GenericAPIView):
                 user = User.objects.get(email=email)
             except User.DoesNotExist:
                 return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
-            uid = urlsafe_base64_encode(force_bytes(user.pk))
+
+            uid = urlsafe_base64_encode(force_bytes(str(user.pk)))
             token = default_token_generator.make_token(user)
             reset_link = f"http://127.0.0.1:8000/accounts/reset-password/{uid}/{token}/"
             send_forget_password.delay(email, reset_link)
-            return Response({'success': 'Password reset link sent! '}, status=status.HTTP_200_OK)
+            return Response({'success': 'Password reset link sent'}, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
@@ -102,22 +102,23 @@ class PasswordResetView(GenericAPIView):
     serializer_class = PasswordResetLoginSerializer
 
     def post(self, request, uid, token):
+
         serializer = self.get_serializer(data=request.data)
         if serializer.is_valid():
             new_password = serializer.validated_data['new_password']
+
             try:
-                uid = force_str(urlsafe_base64_encode(uid))
+                uid = force_str(urlsafe_base64_decode(uid))
                 user = User.objects.get(pk=uid)
             except (TypeError, ValueError, OverflowError, User.DoesNotExist):
                 user = None
             if user is not None and default_token_generator.check_token(user, token):
                 user.set_password(new_password)
                 user.save()
-                return Response({'success': 'Password reset successfully !'}, status=status.HTTP_200_OK)
+                return Response({'success': 'Password reset successfully'}, status=status.HTTP_200_OK)
             else:
                 return Response({'error': 'Invalid token'}, status=status.HTTP_400_BAD_REQUEST)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
 
 class UserUpdateGenericAPIView(GenericAPIView):
     permission_classes = (IsAuthenticated,)
