@@ -120,6 +120,7 @@ class PasswordResetView(GenericAPIView):
                 return Response({'error': 'Invalid token'}, status=status.HTTP_400_BAD_REQUEST)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
 class UserUpdateGenericAPIView(GenericAPIView):
     permission_classes = (IsAuthenticated,)
     serializer_class = UpdateUserSerializer
@@ -135,7 +136,7 @@ class UserUpdateGenericAPIView(GenericAPIView):
 
 class UserLict(ListAPIView):
     permission_classes = (IsAdminPermission,)
-    queryset = User.objects.all()
+    queryset = User.objects.all().order_by('id')
 
     serializer_class = UserListSerializer
 
@@ -148,3 +149,5 @@ class LogoutAPIView(APIView):
         token = RefreshToken(refresh_token)
         token.blacklist()
         return Response(status=204)
+
+

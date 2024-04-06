@@ -1,0 +1,895 @@
+ 
+ -------------- celery@kali v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.9-amd64-x86_64-with-glibc2.37 2024-04-04 08:43:18
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         karaoce:0x7fe7e5a74cd0
+- ** ---------- .> transport:   redis://localhost:6379/1
+- ** ---------- .> results:     redis://localhost:6379/1
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+
+
+[2024-04-04 08:43:18,356: WARNING/MainProcess] /home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-04-04 08:43:18,360: INFO/MainProcess] Connected to redis://localhost:6379/1
+[2024-04-04 08:43:18,360: WARNING/MainProcess] /home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-04-04 08:43:18,362: INFO/MainProcess] mingle: searching for neighbors
+[2024-04-04 08:43:19,367: INFO/MainProcess] mingle: all alone
+[2024-04-04 08:43:19,381: INFO/MainProcess] celery@kali ready.
+
+worker: Hitting Ctrl+C again will terminate all running tasks!
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@kali v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.9-amd64-x86_64-with-glibc2.37 2024-04-04 08:43:28
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         karaoce:0x7f28c9bb9810
+- ** ---------- .> transport:   redis://localhost:6379/1
+- ** ---------- .> results:     redis://localhost:6379/1
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+
+
+[2024-04-04 08:43:29,093: WARNING/MainProcess] /home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-04-04 08:43:29,097: INFO/MainProcess] Connected to redis://localhost:6379/1
+[2024-04-04 08:43:29,097: WARNING/MainProcess] /home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-04-04 08:43:29,099: INFO/MainProcess] mingle: searching for neighbors
+[2024-04-04 08:43:30,107: INFO/MainProcess] mingle: all alone
+[2024-04-04 08:43:30,118: INFO/MainProcess] celery@kali ready.
+ 
+ -------------- celery@kali v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.9-amd64-x86_64-with-glibc2.37 2024-04-04 08:43:50
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         karaoce:0x7f23e6d66690
+- ** ---------- .> transport:   redis://localhost:6379/1
+- ** ---------- .> results:     redis://localhost:6379/1
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+
+
+[2024-04-04 08:43:50,590: WARNING/MainProcess] /home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-04-04 08:43:50,594: INFO/MainProcess] Connected to redis://localhost:6379/1
+[2024-04-04 08:43:50,595: WARNING/MainProcess] /home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-04-04 08:43:50,596: INFO/MainProcess] mingle: searching for neighbors
+[2024-04-04 08:43:51,607: INFO/MainProcess] mingle: all alone
+[2024-04-04 08:43:51,625: INFO/MainProcess] celery@kali ready.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 04, 2024 - 08:44:06
+Django version 5.0.2, using settings 'karaoce.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[04/Apr/2024 08:44:36] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 08:44:36] "GET /swagger/?format=openapi HTTP/1.1" 200 12069
+[04/Apr/2024 08:44:36] "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+[04/Apr/2024 08:44:37] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 08:44:37] "GET /swagger/?format=openapi HTTP/1.1" 200 12069
+[04/Apr/2024 08:44:37] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 08:44:37] "GET /swagger/?format=openapi HTTP/1.1" 200 12069
+[04/Apr/2024 08:44:38] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 08:44:38] "GET /swagger/?format=openapi HTTP/1.1" 200 12069
+
+Restarting celery worker (/home/kali/PycharmProjects/karaoce/.venv/bin/celery -A karaoce worker --loglevel=info)
+Restarting celery worker (/home/kali/PycharmProjects/karaoce/.venv/bin/celery -A karaoce worker --loglevel=info)
+
+ 
+ -------------- celery@kali v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.9-amd64-x86_64-with-glibc2.37 2024-04-04 08:44:44
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         karaoce:0x7f373cabe4d0
+- ** ---------- .> transport:   redis://localhost:6379/1
+- ** ---------- .> results:     redis://localhost:6379/1
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . accounts.tasks.send_email
+  . accounts.tasks.send_forget_password
+
+[04/Apr/2024 08:44:44] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 08:44:44] "GET /swagger/?format=openapi HTTP/1.1" 200 12069
+[2024-04-04 08:44:44,600: WARNING/MainProcess] /home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-04-04 08:44:44,604: INFO/MainProcess] Connected to redis://localhost:6379/1
+[2024-04-04 08:44:44,605: WARNING/MainProcess] /home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-04-04 08:44:44,607: INFO/MainProcess] mingle: searching for neighbors
+ 
+ -------------- celery@kali v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.9-amd64-x86_64-with-glibc2.37 2024-04-04 08:44:44
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         karaoce:0x7f65bb3b1c50
+- ** ---------- .> transport:   redis://localhost:6379/1
+- ** ---------- .> results:     redis://localhost:6379/1
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . accounts.tasks.send_email
+  . accounts.tasks.send_forget_password
+
+[04/Apr/2024 08:44:44] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 08:44:45] "GET /swagger/?format=openapi HTTP/1.1" 200 12069
+[2024-04-04 08:44:45,139: WARNING/MainProcess] /home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-04-04 08:44:45,142: INFO/MainProcess] Connected to redis://localhost:6379/1
+[2024-04-04 08:44:45,143: WARNING/MainProcess] /home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-04-04 08:44:45,145: INFO/MainProcess] mingle: searching for neighbors
+[04/Apr/2024 08:44:45] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 08:44:45] "GET /swagger/?format=openapi HTTP/1.1" 200 12069
+[04/Apr/2024 08:44:45] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 08:44:45] "GET /swagger/?format=openapi HTTP/1.1" 200 12069
+[2024-04-04 08:44:45,615: INFO/MainProcess] mingle: all alone
+[2024-04-04 08:44:45,620: INFO/MainProcess] celery@kali ready.
+[04/Apr/2024 08:44:45] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 08:44:45] "GET /swagger/?format=openapi HTTP/1.1" 200 12069
+[04/Apr/2024 08:44:45] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 08:44:45] "GET /swagger/?format=openapi HTTP/1.1" 200 12069
+[04/Apr/2024 08:44:45] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 08:44:46] "GET /swagger/?format=openapi HTTP/1.1" 200 12069
+[04/Apr/2024 08:44:46] "GET /swagger/ HTTP/1.1" 200 2165
+[2024-04-04 08:44:46,151: INFO/MainProcess] mingle: all alone
+[2024-04-04 08:44:46,156: INFO/MainProcess] celery@kali ready.
+[04/Apr/2024 08:44:46] "GET /swagger/?format=openapi HTTP/1.1" 200 12069
+[04/Apr/2024 08:44:46] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 08:44:46] "GET /swagger/?format=openapi HTTP/1.1" 200 12069
+[04/Apr/2024 08:44:46] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 08:44:46] "GET /swagger/?format=openapi HTTP/1.1" 200 12069
+[04/Apr/2024 08:44:46] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 08:44:47] "GET /swagger/?format=openapi HTTP/1.1" 200 12069
+[04/Apr/2024 09:32:57] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 09:32:57] "GET /swagger/?format=openapi HTTP/1.1" 200 12069
+[04/Apr/2024 09:32:58] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 09:32:58] "GET /swagger/?format=openapi HTTP/1.1" 200 12069
+Internal Server Error: /accounts/user-list/
+Traceback (most recent call last):
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/contrib/auth/models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/accounts/permission.py", line 8, in has_permission
+    admin_role = UserRole.objects.get(user=request.user).role.name
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7fe8280b7690>.
+[04/Apr/2024 09:33:05] "GET /accounts/user-list/ HTTP/1.1" 500 26059
+[04/Apr/2024 09:33:23] "POST /accounts/token/ HTTP/1.1" 200 483
+[04/Apr/2024 09:33:47] "GET /accounts/user-list/ HTTP/1.1" 200 315
+[04/Apr/2024 09:52:00] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 09:52:00] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+[04/Apr/2024 09:52:00] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+[04/Apr/2024 09:52:00] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 09:52:00] "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+[04/Apr/2024 09:52:00] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+[04/Apr/2024 09:52:00] "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+[04/Apr/2024 09:52:00] "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+[04/Apr/2024 09:52:00] "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+[04/Apr/2024 09:52:01] "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+[04/Apr/2024 09:52:01] "GET /swagger/?format=openapi HTTP/1.1" 200 12069
+[04/Apr/2024 09:52:02] "GET /swagger/?format=openapi HTTP/1.1" 200 12069
+[04/Apr/2024 09:53:29] "POST /accounts/token/ HTTP/1.1" 200 483
+[04/Apr/2024 09:54:49] "GET /accounts/user-list/ HTTP/1.1" 200 315
+Bad Request: /accounts/confirmation-code/
+[04/Apr/2024 09:59:20] "POST /accounts/confirmation-code/ HTTP/1.1" 400 45
+[04/Apr/2024 10:00:34] "POST /accounts/register/ HTTP/1.1" 201 27
+[2024-04-04 10:00:34,160: INFO/MainProcess] Task accounts.tasks.send_email[9d42a5a0-a592-4bd2-91aa-572024fc1e08] received
+[2024-04-04 10:00:39,458: INFO/ForkPoolWorker-8] Task accounts.tasks.send_email[9d42a5a0-a592-4bd2-91aa-572024fc1e08] succeeded in 5.295480064000003s: 'Done'
+[04/Apr/2024 10:04:33] "GET /main/search-video/ HTTP/1.1" 200 1991
+[04/Apr/2024 10:08:40] "POST /accounts/token/ HTTP/1.1" 200 483
+Unauthorized: /accounts/token/refresh/
+[04/Apr/2024 10:10:50] "POST /accounts/token/refresh/ HTTP/1.1" 401 58
+[04/Apr/2024 10:11:43] "POST /accounts/update-user/ HTTP/1.1" 200 58
+[2024-04-04 10:24:34,762: INFO/MainProcess] Task accounts.tasks.send_email[a48d1b1d-a292-42d4-9834-4a0c1aa0f1c9] received
+[04/Apr/2024 10:24:34] "POST /accounts/register/ HTTP/1.1" 201 27
+[2024-04-04 10:24:39,333: INFO/ForkPoolWorker-8] Task accounts.tasks.send_email[a48d1b1d-a292-42d4-9834-4a0c1aa0f1c9] succeeded in 4.569513145999736s: 'Done'
+Bad Request: /accounts/register/
+[04/Apr/2024 10:27:48] "POST /accounts/register/ HTTP/1.1" 400 79
+Bad Request: /accounts/register/
+[04/Apr/2024 10:28:13] "POST /accounts/register/ HTTP/1.1" 400 79
+Bad Request: /accounts/register/
+[04/Apr/2024 10:28:21] "POST /accounts/register/ HTTP/1.1" 400 79
+Bad Request: /accounts/register/
+[04/Apr/2024 10:28:49] "POST /accounts/register/ HTTP/1.1" 400 79
+Unauthorized: /accounts/register/
+[04/Apr/2024 10:28:54] "POST /accounts/register/ HTTP/1.1" 401 183
+Bad Request: /accounts/register/
+[04/Apr/2024 10:29:21] "POST /accounts/register/ HTTP/1.1" 400 79
+Bad Request: /accounts/register/
+[04/Apr/2024 10:29:31] "POST /accounts/register/ HTTP/1.1" 400 79
+[04/Apr/2024 10:39:51] "GET /main/category-video/1 HTTP/1.1" 200 26
+[04/Apr/2024 10:40:47] "GET /main/category-list/ HTTP/1.1" 200 509
+[04/Apr/2024 10:50:17] "POST /accounts/register/ HTTP/1.1" 201 27
+[2024-04-04 10:50:17,891: INFO/MainProcess] Task accounts.tasks.send_email[e27aa514-45ae-4cb6-ac68-75c468f06257] received
+[2024-04-04 10:50:28,808: INFO/ForkPoolWorker-8] Task accounts.tasks.send_email[e27aa514-45ae-4cb6-ac68-75c468f06257] succeeded in 10.915572834001068s: 'Done'
+Bad Request: /accounts/register/
+[04/Apr/2024 10:56:56] "POST /accounts/register/ HTTP/1.1" 400 79
+[04/Apr/2024 10:59:44] "POST /accounts/register/ HTTP/1.1" 201 27
+[2024-04-04 10:59:44,425: INFO/MainProcess] Task accounts.tasks.send_email[d1ffec4e-781f-493d-aae2-cfd5985039d8] received
+[2024-04-04 10:59:54,823: INFO/ForkPoolWorker-8] Task accounts.tasks.send_email[d1ffec4e-781f-493d-aae2-cfd5985039d8] succeeded in 10.396711061999667s: 'Done'
+Internal Server Error: /accounts/log-out/
+Traceback (most recent call last):
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/accounts/views.py", line 150, in post
+    token.blacklist()
+    ^^^^^^^^^^^^^^^
+AttributeError: 'RefreshToken' object has no attribute 'blacklist'
+[04/Apr/2024 11:03:09] "POST /accounts/log-out/ HTTP/1.1" 500 22345
+
+Restarting celery worker (/home/kali/PycharmProjects/karaoce/.venv/bin/celery -A karaoce worker --loglevel=info)
+
+worker: Warm shutdown (MainProcess)
+
+Restarting celery worker (/home/kali/PycharmProjects/karaoce/.venv/bin/celery -A karaoce worker --loglevel=info)
+
+worker: Warm shutdown (MainProcess)
+[2024-04-04 11:03:09,659: ERROR/MainProcess] Process 'ForkPoolWorker-6' pid:139470 exited with 'exitcode 70'
+[2024-04-04 11:03:09,670: ERROR/MainProcess] Process 'ForkPoolWorker-3' pid:139467 exited with 'exitcode 70'
+ 
+ -------------- celery@kali v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.9-amd64-x86_64-with-glibc2.37 2024-04-04 11:03:12
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         karaoce:0x7fb5c2a69890
+- ** ---------- .> transport:   redis://localhost:6379/1
+- ** ---------- .> results:     redis://localhost:6379/1
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . accounts.tasks.send_email
+  . accounts.tasks.send_forget_password
+
+ 
+ -------------- celery@kali v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.9-amd64-x86_64-with-glibc2.37 2024-04-04 11:03:12
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         karaoce:0x7f8002ebe710
+- ** ---------- .> transport:   redis://localhost:6379/1
+- ** ---------- .> results:     redis://localhost:6379/1
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . accounts.tasks.send_email
+  . accounts.tasks.send_forget_password
+
+[2024-04-04 11:03:12,433: WARNING/MainProcess] /home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-04-04 11:03:12,435: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/1: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 2.00 seconds... (1/100)
+
+[2024-04-04 11:03:12,619: WARNING/MainProcess] /home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-04-04 11:03:12,621: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/1: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 2.00 seconds... (1/100)
+
+[2024-04-04 11:03:14,437: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/1: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 4.00 seconds... (2/100)
+
+[2024-04-04 11:03:14,623: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/1: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 4.00 seconds... (2/100)
+
+[2024-04-04 11:03:18,440: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/1: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 6.00 seconds... (3/100)
+
+[2024-04-04 11:03:18,626: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/1: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 6.00 seconds... (3/100)
+
+[2024-04-04 11:03:24,443: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/1: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 8.00 seconds... (4/100)
+
+[2024-04-04 11:03:24,629: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/1: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 8.00 seconds... (4/100)
+
+[2024-04-04 11:03:32,447: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/1: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 10.00 seconds... (5/100)
+
+[2024-04-04 11:03:32,632: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/1: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 10.00 seconds... (5/100)
+
+[2024-04-04 11:03:42,451: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/1: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 12.00 seconds... (6/100)
+
+[2024-04-04 11:03:42,636: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/1: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 12.00 seconds... (6/100)
+
+[2024-04-04 11:03:54,455: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/1: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 14.00 seconds... (7/100)
+
+[2024-04-04 11:03:54,640: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/1: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 14.00 seconds... (7/100)
+
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Error: That port is already in use.
+Watching for file changes with StatReloader
+Error: That port is already in use.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 04, 2024 - 13:14:31
+Django version 5.0.2, using settings 'karaoce.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[04/Apr/2024 13:21:08] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 13:21:08] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 13:21:09] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 13:21:09] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 13:21:16] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 13:21:16] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 13:21:17] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 13:21:17] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 15:55:30] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 15:55:30] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 15:55:31] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 15:55:31] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 15:55:32] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 15:55:32] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 15:56:07] "POST /accounts/token/ HTTP/1.1" 200 483
+[04/Apr/2024 15:56:29] "GET /accounts/user-list/ HTTP/1.1" 200 315
+/home/kali/PycharmProjects/karaoce/accounts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 04, 2024 - 13:21:04
+Django version 5.0.2, using settings 'karaoce.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+           ^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/urls/resolvers.py", line 519, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/urls/resolvers.py", line 738, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/kali/PycharmProjects/karaoce/karaoce/urls.py", line 27, in <module>
+    path('accounts/', include("accounts.urls")),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/kali/PycharmProjects/karaoce/accounts/urls.py", line 4, in <module>
+    from accounts.views import RegisterAPIView, ConfirmationCodeAPIView, PasswordResetRequestView, PasswordResetView, \
+  File "/home/kali/PycharmProjects/karaoce/accounts/views.py", line 137, in <module>
+    class UserLict(ListAPIView):
+  File "/home/kali/PycharmProjects/karaoce/accounts/views.py", line 139, in UserLict
+    queryset = User.objects.all().order_by(id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1701, in order_by
+    obj.query.add_ordering(*field_names)
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/sql/query.py", line 2262, in add_ordering
+    raise FieldError("Invalid order_by arguments: %s" % errors)
+django.core.exceptions.FieldError: Invalid order_by arguments: [<built-in function id>]
+Watching for file changes with StatReloader
+[04/Apr/2024 15:58:04] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 15:58:04] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 15:58:17] "POST /accounts/token/ HTTP/1.1" 200 483
+[04/Apr/2024 15:58:37] "GET /accounts/user-list/ HTTP/1.1" 200 315
+/home/kali/PycharmProjects/karaoce/accounts/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 04, 2024 - 15:58:00
+Django version 5.0.2, using settings 'karaoce.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+/home/kali/PycharmProjects/karaoce/accounts/models.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Error: That port is already in use.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 04, 2024 - 16:01:43
+Django version 5.0.2, using settings 'karaoce.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[04/Apr/2024 16:07:43] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:07:43] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:07:52] "GET /admin/ HTTP/1.1" 302 0
+[04/Apr/2024 16:07:52] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3143
+[04/Apr/2024 16:07:52] "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+[04/Apr/2024 16:07:52] "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+[04/Apr/2024 16:07:52] "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 59344
+[04/Apr/2024 16:07:52] "GET /static/vendor/bootswatch/cyborg/bootstrap.min.css HTTP/1.1" 200 164597
+[04/Apr/2024 16:07:52] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+[04/Apr/2024 16:07:52] "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+[04/Apr/2024 16:07:52] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+[04/Apr/2024 16:07:52] "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+[04/Apr/2024 16:07:52] "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78196
+[04/Apr/2024 16:07:52] "GET /static/images/favicon.png HTTP/1.1" 404 1917
+[04/Apr/2024 16:07:59] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+Couldnt reverse home
+Could not reverse url from accounts.User
+Could not reverse url from admin
+Could not reverse url from admin
+[04/Apr/2024 16:07:59] "GET /admin/ HTTP/1.1" 200 22495
+[04/Apr/2024 16:07:59] "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+[04/Apr/2024 16:07:59] "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13276
+Couldnt reverse home
+Could not reverse url from accounts.User
+Could not reverse url from admin
+Could not reverse url from admin
+[04/Apr/2024 16:08:03] "GET /admin/accounts/role/add/ HTTP/1.1" 200 15624
+[04/Apr/2024 16:08:03] "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+[04/Apr/2024 16:08:03] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[04/Apr/2024 16:08:03] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+[04/Apr/2024 16:08:03] "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+[04/Apr/2024 16:08:03] "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+[04/Apr/2024 16:08:03] "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[04/Apr/2024 16:08:03] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[04/Apr/2024 16:08:03] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[04/Apr/2024 16:08:03] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+[04/Apr/2024 16:08:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Apr/2024 16:08:03] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[04/Apr/2024 16:08:03] "GET /static/jazzmin/js/change_form.js HTTP/1.1" 200 6052
+[04/Apr/2024 16:08:03] "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+[04/Apr/2024 16:08:07] "POST /admin/accounts/role/add/ HTTP/1.1" 302 0
+Couldnt reverse home
+Could not reverse url from accounts.User
+Could not reverse url from admin
+Could not reverse url from admin
+[04/Apr/2024 16:08:07] "GET /admin/accounts/role/ HTTP/1.1" 200 17520
+[04/Apr/2024 16:08:07] "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+[04/Apr/2024 16:08:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Couldnt reverse home
+Could not reverse url from accounts.User
+Could not reverse url from admin
+Could not reverse url from admin
+[04/Apr/2024 16:08:10] "GET /admin/accounts/userrole/ HTTP/1.1" 200 14611
+[04/Apr/2024 16:08:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Couldnt reverse home
+Could not reverse url from accounts.User
+Could not reverse url from admin
+Could not reverse url from admin
+[04/Apr/2024 16:08:12] "GET /admin/accounts/userrole/add/ HTTP/1.1" 200 17726
+[04/Apr/2024 16:08:12] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[04/Apr/2024 16:08:12] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[04/Apr/2024 16:08:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Apr/2024 16:08:12] "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+[04/Apr/2024 16:08:20] "POST /admin/accounts/userrole/add/ HTTP/1.1" 302 0
+Couldnt reverse home
+Could not reverse url from accounts.User
+Could not reverse url from admin
+Could not reverse url from admin
+[04/Apr/2024 16:08:20] "GET /admin/accounts/userrole/ HTTP/1.1" 200 17576
+[04/Apr/2024 16:08:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/home/kali/PycharmProjects/karaoce/karaoce/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 04, 2024 - 16:06:52
+Django version 5.0.2, using settings 'karaoce.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[04/Apr/2024 16:13:47] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:13:47] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:13:48] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:13:48] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:13:48] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:13:48] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:13:49] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:13:49] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:14:18] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:14:18] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:14:22] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:14:22] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:14:22] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:14:22] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:14:23] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:14:23] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:14:24] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:14:24] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:14:24] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:14:24] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:14:25] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:14:25] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:14:26] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:14:26] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:14:26] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:14:26] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:14:27] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:14:27] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:14:27] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:14:27] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:14:27] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:14:27] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:14:28] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:14:28] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:14:28] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:14:28] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:14:28] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:14:28] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:14:29] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:14:29] "GET /swagger/?format=openapi HTTP/1.1" 200 12070
+[04/Apr/2024 16:14:50] "POST /accounts/token/ HTTP/1.1" 200 483
+[04/Apr/2024 16:17:45] "POST /accounts/register/ HTTP/1.1" 201 27
+[04/Apr/2024 16:19:19] "POST /accounts/confirmation-code/ HTTP/1.1" 200 16
+[04/Apr/2024 16:19:31] "POST /accounts/token/ HTTP/1.1" 200 483
+/home/kali/PycharmProjects/karaoce/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 04, 2024 - 16:13:11
+Django version 5.0.2, using settings 'karaoce.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 04, 2024 - 16:20:24
+Django version 5.0.2, using settings 'karaoce.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 04, 2024 - 16:20:34
+Django version 5.0.2, using settings 'karaoce.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[04/Apr/2024 16:24:40] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:24:40] "GET /swagger/?format=openapi HTTP/1.1" 200 12250
+[04/Apr/2024 16:25:06] "POST /accounts/register/ HTTP/1.1" 201 27
+[04/Apr/2024 16:25:54] "POST /accounts/confirmation-code/ HTTP/1.1" 200 16
+[04/Apr/2024 16:26:09] "POST /accounts/token/ HTTP/1.1" 200 483
+/home/kali/PycharmProjects/karaoce/accounts/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 04, 2024 - 16:24:12
+Django version 5.0.2, using settings 'karaoce.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[04/Apr/2024 16:27:42] "GET /swagger/ HTTP/1.1" 200 2165
+[04/Apr/2024 16:27:42] "GET /swagger/?format=openapi HTTP/1.1" 200 12233
+[04/Apr/2024 16:28:01] "POST /accounts/token/ HTTP/1.1" 200 483
+Internal Server Error: /accounts/update-user/
+Traceback (most recent call last):
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.StringDataRightTruncation: value too long for type character varying(11)
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/accounts/views.py", line 133, in post
+    serializer.save()
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 1006, in update
+    instance.save()
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/contrib/auth/base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1036, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1101, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1278, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1990, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/kali/PycharmProjects/karaoce/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.DataError: value too long for type character varying(11)
+
+[04/Apr/2024 16:28:41] "POST /accounts/update-user/ HTTP/1.1" 500 26084
+[04/Apr/2024 16:29:28] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css.map HTTP/1.1" 200 251096
+[04/Apr/2024 16:29:28] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js.map HTTP/1.1" 200 517830
+[04/Apr/2024 16:29:28] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js.map HTTP/1.1" 200 1540070
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 04, 2024 - 16:27:41
+Django version 5.0.2, using settings 'karaoce.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+

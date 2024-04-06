@@ -7,7 +7,7 @@ from main.models import Category, Video, LikeVideo, Basket
 class CategorySerializer(ModelSerializer):
     class Meta:
         model = Category
-        fields = ('name', 'photo')
+        fields = '__all__'
 
 
 class VideoSerializer(ModelSerializer):
@@ -16,19 +16,29 @@ class VideoSerializer(ModelSerializer):
         fields = '__all__'
 
 
-class LikeSerializer(ModelSerializer):
+class LikeSerializer(serializers.Serializer):
+    like = serializers.BooleanField()
+    video_id = serializers.IntegerField()
+
+
+class BasketSerializer(serializers.Serializer):
+    basket = serializers.BooleanField()
+    video_id = serializers.IntegerField()
+
+
+class VideoLikeSerializer(ModelSerializer):
     class Meta:
         model = LikeVideo
         fields = '__all__'
 
 
-class LikeVideoSerializer(ModelSerializer):
-    class Meta:
-        model = LikeVideo
-        fields = ('video_id',)
-
-
-class BasketSerializer(ModelSerializer):
+class BasketListSerializer(ModelSerializer):
     class Meta:
         model = Basket
+        fields = '__all__'
+
+
+class VideoModelSerializer(ModelSerializer):
+    class Meta:
+        model = Video
         fields = '__all__'
