@@ -22,9 +22,10 @@ class CategoryVideo(GenericAPIView):
     serializer_class = VideoSerializer
 
     def get(self, request, category_id):
+        name = Category.objects.get(id=category_id).name
         video = Video.objects.filter(category_id=category_id)
         serializer = self.get_serializer(video, many=True)
-        return Response({'success': True, 'data': serializer.data})
+        return Response({'Artist name': name, 'data': serializer.data})
 
 
 class VideoListAPIView(ListAPIView):
