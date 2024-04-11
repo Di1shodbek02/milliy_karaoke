@@ -18,7 +18,7 @@ from .models import User
 from .permission import IsAdminPermission
 from .serializers import RegisterSerializer, ConfirmationCodeSerializer, PasswordResetRequestSerializer, \
     PasswordResetLoginSerializer, UserListSerializer, UpdateUserSerializer
-from .tasks import send_email, send_forget_password
+from accounts.tasks import send_email, send_forget_password
 
 load_dotenv()
 
