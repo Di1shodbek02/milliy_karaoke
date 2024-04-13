@@ -67,6 +67,8 @@ class ConfirmationCodeAPIView(GenericAPIView):
 
             if User.objects.filter(email=email).exists():
                 return Response({'success': False, 'message': 'This email already exists!'}, status=400)
+            if User.objects.filter(username=username).exists():
+                return Response({'success': False, 'message': 'This username already exists!'}, status=400)
             else:
                 user = User.objects.create_user(
                     email=email,

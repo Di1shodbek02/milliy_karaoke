@@ -256,8 +256,8 @@ MUSIC_ROOT = os.path.join(BASE_DIR, 'music/')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CELERY_RESULT_BACKEND = 'redis://localhost:6379/1'
-CELERY_BROKER_URL = 'redis://localhost:6379/1'
+CELERY_RESULT_BACKEND = 'redis://0.0.0.1:8000:6379/1'
+CELERY_BROKER_URL = 'redis://0.0.0.1:8000:6379/1'
 CELERY_TIMEZONE = TIME_ZONE
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
