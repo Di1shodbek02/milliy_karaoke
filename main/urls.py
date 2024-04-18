@@ -1,7 +1,8 @@
 from django.urls import path
 
 from .views import (CategoryGenericAPIView, CategoryVideo, VideoListAPIView, CategorySearch, VideoSearch,
-                    LikeVideoAPIView, BasketListAPIView, VideoMusic, VideoLikeAPIView, BasketVideoAPIView)
+                    LikeVideoAPIView, BasketListAPIView, VideoMusic, VideoLikeAPIView, BasketVideoAPIView,
+                    NotificationAPIView, NotificationDetailView)
 
 urlpatterns = [
     path('category-list/', CategoryGenericAPIView.as_view(), name='category_list'),
@@ -14,4 +15,6 @@ urlpatterns = [
     path('basket-video/', BasketVideoAPIView.as_view(), name='basket_video'),
     path('backet-list-video/', BasketListAPIView.as_view(), name='backet_videos'),
     path('video-music/<int:video_id>', VideoMusic.as_view(), name='video_music'),
+    path('notification/', NotificationAPIView.as_view(), name='notification'),
+    path('notification-detail/<int:pk>', NotificationDetailView.as_view(), name='notification-detail'),
 ]

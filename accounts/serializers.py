@@ -7,7 +7,7 @@ from .models import User
 class RegisterSerializer(ModelSerializer):
     class Meta:
         model = User
-        fields = ['email', 'username', 'password']
+        fields = ['email', 'username', 'password', 'birthday']
 
 
 class ConfirmationCodeSerializer(serializers.Serializer):
@@ -33,3 +33,9 @@ class UpdateUserSerializer(ModelSerializer):
     class Meta:
         model = User
         fields = ['avatar', 'first_name', 'last_name', 'phone', 'birthday']
+
+
+class UserSerializer(ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('avatar','first_name', 'last_name', 'email', 'username', 'phone', 'birthday')

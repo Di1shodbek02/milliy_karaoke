@@ -1,7 +1,7 @@
+from rest_framework import serializers
 from rest_framework.serializers import ModelSerializer
 
-from rest_framework import serializers
-from main.models import Category, Video, LikeVideo, Basket
+from main.models import Category, Video, LikeVideo, Basket, Notification
 
 
 class CategorySerializer(ModelSerializer):
@@ -26,19 +26,49 @@ class BasketSerializer(serializers.Serializer):
     video_id = serializers.IntegerField()
 
 
-class VideoLikeSerializer(ModelSerializer):
+class VideoLikeSerializer(serializers.ModelSerializer):
+    video = serializers.SerializerMethodField()
+
     class Meta:
         model = LikeVideo
-        fields = '__all__'
+        fields = ('user_id', 'video')
+
+    def get_video(self, obj):
+        video = obj.video_id
+        return {
+            'title': video.title,
+            'image': video.image.url,
+            'music': video.music.url,
+            'text': video.text,
+            'uploaded_at': video.uploaded_at,
+        }
 
 
 class BasketListSerializer(ModelSerializer):
+    video = serializers.SerializerMethodField()
+
     class Meta:
         model = Basket
-        fields = '__all__'
+        fields = ('user_id', 'video')
+
+    def get_video(self, obj):
+        video = obj.video_id
+        return {
+            'title': video.title,
+            'image': video.image.url,
+            'music': video.music.url,
+            'text': video.text,
+            'uploaded_at': video.uploaded_at,
+        }
 
 
 class VideoModelSerializer(ModelSerializer):
     class Meta:
         model = Video
+        fields = '__all__'
+
+
+class NotificationSerializer(ModelSerializer):
+    class Meta:
+        model = Notification
         fields = '__all__'

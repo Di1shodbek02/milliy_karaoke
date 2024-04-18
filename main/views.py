@@ -1,24 +1,21 @@
-from django.db.models import Q
-from rest_framework.response import Response
-from rest_framework.generics import ListAPIView, GenericAPIView, RetrieveAPIView
+from rest_framework import filters
+from rest_framework.generics import ListAPIView, GenericAPIView
 from rest_framework.permissions import IsAuthenticated
-from rest_framework import filters, status
-from rest_framework.viewsets import ModelViewSet
+from rest_framework.response import Response
 
-from accounts.permission import IsAdminPermission
-from main.models import Category, Video, LikeVideo, Basket
+from main.models import Category, Video, LikeVideo, Basket, Notification
 from main.serializers import CategorySerializer, VideoSerializer, LikeSerializer, BasketSerializer, \
-    VideoModelSerializer, VideoLikeSerializer, BasketListSerializer
+    VideoModelSerializer, VideoLikeSerializer, BasketListSerializer, NotificationSerializer
 
 
 class CategoryGenericAPIView(ListAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
-    permission_classes = (IsAuthenticated,)
+    permission_classes = ()
 
 
 class CategoryVideo(GenericAPIView):
-    permission_classes = (IsAuthenticated,)
+    permission_classes = ()
     serializer_class = VideoSerializer
 
     def get(self, request, category_id):
@@ -31,13 +28,13 @@ class CategoryVideo(GenericAPIView):
 class VideoListAPIView(ListAPIView):
     queryset = Video.objects.all()
     serializer_class = VideoSerializer
-    permission_classes = (IsAuthenticated,)
+    permission_classes = ()
 
 
 class CategorySearch(ListAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
-    permission_classes = (IsAuthenticated,)
+    permission_classes = ()
     filter_backends = [filters.SearchFilter]
     search_fields = ['name']
 
@@ -45,7 +42,7 @@ class CategorySearch(ListAPIView):
 class VideoSearch(ListAPIView):
     queryset = Video.objects.all()
     serializer_class = VideoSerializer
-    permission_classes = (IsAuthenticated,)
+    permission_classes = ()
     filter_backends = [filters.SearchFilter]
     search_fields = ['title']
 
@@ -68,7 +65,7 @@ class LikeVideoAPIView(GenericAPIView):
         self.unlike_video(video_id, user_id)
         return Response({'message': 'Video Removed Successfully'})
 
-    def like_video(self, video_id, user_id):
+    def like_video(self, video_id):
         user = self.request.user
         video = Video.objects.get(pk=video_id)
         LikeVideo.objects.create(video_id=video, user_id=user)
@@ -82,13 +79,13 @@ class VideoLikeAPIView(GenericAPIView):
     serializer_class = VideoLikeSerializer
 
     def get(self, request):
-        like = LikeVideo.objects.all()
-        serializer = self.get_serializer(like, many=True)
+        liked_videos = LikeVideo.objects.all()
+        serializer = self.get_serializer(liked_videos, many=True)
         return Response(serializer.data)
 
 
 class VideoMusic(GenericAPIView):
-    permission_classes = (IsAuthenticated,)
+    permission_classes = ()
     serializer_class = VideoModelSerializer
 
     def get(self, request, video_id):
@@ -132,3 +129,26 @@ class BasketListAPIView(GenericAPIView):
         basket = Basket.objects.all()
         serializer = self.get_serializer(basket, many=True)
         return Response(serializer.data)
+
+
+class NotificationAPIView(GenericAPIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = NotificationSerializer
+
+    def get(self, request):
+        notifications = Notification.objects.filter(user_id=request.user)
+        serializer = self.serializer_class(notifications, many=True)
+        return Response({'notifications': serializer.data})
+
+
+class NotificationDetailView(GenericAPIView):
+    serializer_class = NotificationSerializer
+    permission_classes = (IsAuthenticated,)
+
+    def get_queryset(self):
+        return Notification.objects.filter(user_id=self.request.user.id)
+
+    def get(self, request, pk):
+        notification = self.get_object()
+        serializer = self.serializer_class(notification)
+        return Response({'notification': serializer.data})

@@ -17,7 +17,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from .models import User
 from .permission import IsAdminPermission
 from .serializers import RegisterSerializer, ConfirmationCodeSerializer, PasswordResetRequestSerializer, \
-    PasswordResetLoginSerializer, UserListSerializer, UpdateUserSerializer
+    PasswordResetLoginSerializer, UserListSerializer, UpdateUserSerializer, UserSerializer
 from accounts.tasks import send_email, send_forget_password
 
 load_dotenv()
@@ -38,6 +38,7 @@ class RegisterAPIView(CreateAPIView):
         email = serializer.validated_data['email']
         username = serializer.validated_data['username']
         password = serializer.validated_data['password']
+        birthday = serializer.validated_data['birthday']
 
         confirmation_code = self.generate_confirmation_code()
 
@@ -45,6 +46,7 @@ class RegisterAPIView(CreateAPIView):
             'email': email,
             'username': username,
             'password': password,
+            'birthday': birthday,
             'confirmation_code': confirmation_code
         }
 
@@ -73,7 +75,7 @@ class ConfirmationCodeAPIView(GenericAPIView):
                 user = User.objects.create_user(
                     email=email,
                     username=username,
-                    password=password
+                    password=password,
                 )
                 return Response({'success': True})
         else:
@@ -153,3 +155,10 @@ class LogoutAPIView(APIView):
         return Response(status=204)
 
 
+class UserInfo(APIView):
+    permission_classes = (IsAuthenticated,)
+
+    def get(self, request):
+        user = request.user
+        user_serializer = UserSerializer(user)
+        return Response(user_serializer.data)

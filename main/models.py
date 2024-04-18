@@ -27,8 +27,8 @@ class Video(models.Model):
 
 
 class LikeVideo(models.Model):
-    video_id = models.ForeignKey(Video, on_delete=models.CASCADE)
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    video_id = models.ForeignKey(Video, on_delete=models.CASCADE)
 
     class Meta:
         unique_together = ('video_id', 'user_id')
@@ -50,3 +50,27 @@ class Comment(models.Model):
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
     comment = models.TextField()
     uploaded_at = models.DateTimeField(auto_now_add=True)
+
+
+class Notification(models.Model):
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    title = models.CharField(max_length=200)
+    text = models.TextField()
+    status = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+
+class UserPersonalize(models.Model):
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    personalize = models.ManyToManyField(Category)
+
+    def __str__(self):
+        return self.name
+
+
+class UserPersonalizez_personalize(models.Model):
+    user_personalize = models.ForeignKey(UserPersonalize, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+
+    class Meta:
+        pass
