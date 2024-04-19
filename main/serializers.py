@@ -40,6 +40,7 @@ class VideoLikeSerializer(serializers.ModelSerializer):
             'image': video.image.url,
             'music': video.music.url,
             'text': video.text,
+            'category_id': video.category_id_id,
             'uploaded_at': video.uploaded_at,
         }
 
@@ -58,6 +59,7 @@ class BasketListSerializer(ModelSerializer):
             'image': video.image.url,
             'music': video.music.url,
             'text': video.text,
+            'category_id': video.category_id_id,
             'uploaded_at': video.uploaded_at,
         }
 
