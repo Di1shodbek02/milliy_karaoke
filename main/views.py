@@ -65,7 +65,7 @@ class LikeVideoAPIView(GenericAPIView):
         self.unlike_video(video_id, user_id)
         return Response({'message': 'Video Removed Successfully'})
 
-    def like_video(self, video_id):
+    def like_video(self, video_id, user_id):
         user = self.request.user
         video = Video.objects.get(pk=video_id)
         LikeVideo.objects.create(video_id=video, user_id=user)

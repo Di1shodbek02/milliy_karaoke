@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    command: gunicorn karaoce.wsgi:application --bind 0.0.0.0:8000
+    expose:
+      - 8000
+    volumes:
+      - media_file:/app/media
+      - static_file:/app/static
+
+  nginx:
+    build: ./nginx
+    ports:
+      - 80:80
+    volumes:
+      - media_file:/app/media
+      - static_file:/app/static
+    depends_on:
+      - web
+
+volumes:
+  media_file:
+  static_file:

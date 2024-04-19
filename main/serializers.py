@@ -36,9 +36,10 @@ class VideoLikeSerializer(serializers.ModelSerializer):
     def get_video(self, obj):
         video = obj.video_id
         return {
+            'id': video.id,
             'title': video.title,
-            'image': video.image.url,
-            'music': video.music.url,
+            'image': "http://10.10.3.172:8000" + video.image.url,
+            'music': "http://10.10.3.172:8000" + video.music.url,
             'text': video.text,
             'category_id': video.category_id_id,
             'uploaded_at': video.uploaded_at,
@@ -55,9 +56,10 @@ class BasketListSerializer(ModelSerializer):
     def get_video(self, obj):
         video = obj.video_id
         return {
+            'id': video.id,
             'title': video.title,
-            'image': video.image.url,
-            'music': video.music.url,
+            'image': "http://10.10.3.172:8000" + video.image.url,
+            'music': "http://10.10.3.172:8000" + video.music.url,
             'text': video.text,
             'category_id': video.category_id_id,
             'uploaded_at': video.uploaded_at,

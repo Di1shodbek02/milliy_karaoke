@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'drf_yasg',  # noqa
     'corsheaders', # noqa
+    'gunicorn',
 
     'main',
     'accounts',
