@@ -22,6 +22,7 @@ django-mptt==0.16.0
 django-redis==5.4.0
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.3.1
+docker==7.0.0
 drf-yasg==1.21.7
 gunicorn==21.2.0
 idna==3.6
@@ -33,7 +34,6 @@ passlib==1.7.4
 pillow==10.2.0
 prompt-toolkit==3.0.43
 psycopg2-binary==2.9.9
-PyAudio==0.2.14
 pycparser==2.21
 PyJWT==2.8.0
 python-dateutil==2.9.0.post0

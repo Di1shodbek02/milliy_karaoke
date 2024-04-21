@@ -75,11 +75,18 @@ DATABASES = {
         'PASSWORD': os.environ.get('DB_PASSWORD'),
         'HOST': os.environ.get('DB_HOST'),
         'PORT': os.environ.get('DB_PORT'),
+        'OPTIONS': {'sslmode': 'require'},
     }
 }
-
 # DATABASES = {
-#     'default': dj_database_url.parse(os.getenv('DATABASE_URL'))
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': os.environ.get('DJANGO_DB_NAME'),
+#         'USER': os.environ.get('DJANGO_DB_USER'),
+#         'PASSWORD': os.environ.get('DJANGO_DB_PASSWORD'),
+#         'HOST': os.environ.get('DJANGO_DB_HOST'),
+#         'PORT': os.environ.get('DJANGO_DB_PORT'),
+#     }
 # }
 
 REST_FRAMEWORK = {
